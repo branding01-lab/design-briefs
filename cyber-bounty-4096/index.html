@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+<meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CYBER BOUNTY 4096 設計需求（菲律賓）</title>
@@ -100,6 +101,12 @@ footer{padding:40px 0 60px;color:var(--ink-3);font-size:13px}
 .idc{font-size:12.5px;border-radius:6px;padding:3px 8px;border:1px solid var(--rule);font-variant-numeric:tabular-nums}
 .idc i{font-style:normal;color:var(--ink-3)}
 
+.dlbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.dl{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:var(--teal-ink);text-decoration:none;font-weight:600;border-radius:8px;padding:10px 16px}
+.dl:hover{filter:brightness(1.08)}
+.dl svg{width:18px;height:18px}
+.dlnote{font-size:13px;color:var(--ink-3)}
+@media print{.dlbar{display:none}}
 @media (max-width:920px){
   .nrow{min-width:0;grid-template-columns:1fr 1fr;row-gap:4px}
   .req-b{grid-template-columns:1fr}
@@ -118,6 +125,7 @@ footer{padding:40px 0 60px;color:var(--ink-3);font-size:13px}
 <header class="top"><div class="wrap">
   <h1>CYBER BOUNTY 4096 設計需求（菲律賓）</h1>
   <p>每個主題先列出動態與靜態素材的款數，以及需要的平台與尺寸，再往下看各語系的文案與畫面建議。黃底是給設計看的中文翻譯，不放進素材。</p>
+  <div class="dlbar"><a class="dl" href="Cyber_Bounty_4096_design_brief.xlsx" download="Cyber_Bounty_4096_設計需求表.xlsx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>下載 Excel 需求表</a><span class="dlnote">240 筆需求，可篩選、排序；黃底欄位為中文翻譯</span></div>
   <div class="stats" id="stats"></div>
   <div class="notes">
     <div class="note"><h3>動態素材共用母片</h3><p>FB 影片與 IG Reels 是直式，X 影片與 Reddit 影片是橫式，建議直式、橫式各剪一支母片再輸出。畫面建議是靜態構圖，需延伸成分鏡。</p></div>
